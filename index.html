@@ -9,6 +9,48 @@
       * {
         box-sizing: border-box;
       }
+      .instructions-container {
+  background-color: #222; /* خلفية داكنة */
+  color: #fff; /* نص أبيض */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.instructions-container h2 {
+  color: #f39c12; /* لون مميز للعناوين */
+  margin-bottom: 15px;
+}
+
+.player-instructions {
+  margin-bottom: 20px;
+}
+
+.player-instructions h3 {
+  color: #3498db; /* لون مميز للاعبين */
+  margin-bottom: 10px;
+}
+
+.player-instructions p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.player-instructions span {
+  background-color: #444; /* خلفية مميزة للأزرار */
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+  display: inline-block;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
     </style>
   </head>
 
@@ -128,12 +170,24 @@
       </div>
       <canvas></canvas>
     </div>
-    <div>
-      NOTE: How To Play ? <br />Player 1 : can use (q , space , e ,r ) to fight
-      && (w , a,d) to move and jump <br />Player 2 : can use (arrow-down ,
-      <b> , </b> , . , / ) && (arrow-right , arrow-left, arrow-up ) to move and
-      jump
+    <div class="instructions-container">
+      <h2>NOTE: How To Play?</h2>
+      <div class="player-instructions">
+        <h3>Player 1</h3>
+        <p>
+          Use <span>Q</span>, <span>Space</span>, <span>E</span>, <span>R</span> to fight <br />
+          and <span>W</span>, <span>A</span>, <span>D</span> to move and jump.
+        </p>
+      </div>
+      <div class="player-instructions">
+        <h3>Player 2</h3>
+        <p>
+          Use <span>Arrow Down</span>, <span>B</span>, <span>,</span>, <span>.</span>, <span>/</span> to fight <br />
+          and <span>Arrow Right</span>, <span>Arrow Left</span>, <span>Arrow Up</span> to move and jump.
+        </p>
+      </div>
     </div>
+    
     <script src="./js/utls.js"></script>
     <script src="./js/classes.js "></script>
     <script src="./index.js"></script>
